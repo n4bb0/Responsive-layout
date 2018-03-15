@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>One page - responsive</title>     <!-- displayed in the browser tab -->
+
+  <link rel="stylesheet" type=" text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">   <!--google font: open sans-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marco">
+	<meta name="description" content="Single page template with responsive layout">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <!--jQuery-->
+</head>
+
+<body>
+
+  <!--navbar-->
+  <nav>
+    <div class="toggleMenu">&#9776;</div>
+    <ul class="navbar">
+      <li data-goTo="home-img" class="active"><a href="#">Home</a></li>
+      <li data-goTo="section1"><a>Section 1</a></li>
+      <li data-goTo="section2"><a>Section 2</a></li>
+      <li data-goTo="section3"><a>Section 3</a></li>
+      <li data-goTo="section4"><a>Section 4</a></li>
+    </ul>
+  </nav>
+  <!--end navbar-->
+
+
+
+  <!--top image-->
+  <section class="section" id="home-img">
+    <div>
+      <h1>One page layout</h1>
+      <p>And it's responsive !</p>
+    </div>
+  </section>
+  <!--end top image-->
+
+
+
+  <div class="page-content">
+    <section class="section" id="section1">
+      <div class="three-columns">
+        <img src="img/3-column/mountain.jpeg" alt="">
+        <h2>Title 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum.</p>
+        <a href="#" class="btn">Details</a>
+      </div>
+      <div class="three-columns">
+        <img src="img/3-column/beach.jpeg" alt="">
+        <h2>Title 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum.</p>
+        <a href="#" class="btn">Details</a>
+      </div>
+      <div class="three-columns last">
+        <img src="img/3-column/city.jpeg" alt="">
+        <h2>Title 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum.</p>
+        <a href="#" class="btn">Details</a>
+      </div>
+    </section>
+
+    <section class="section" id="section2">
+      <div class="two-columns">
+        <img src="img/2-column/day.jpeg" alt="">
+        <div class="text">
+          <h2>Another title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum. </p>
+          <p>Donec eu velit dignissim, efficitur elit sit amet, semper nibh. Donec mollis accumsan diam, id tempus urna pretium eget. Nulla blandit porttitor molestie. Nunc sed eros sed lectus tincidunt commodo sed non ligula.</p>
+        </div>
+      </div>
+      <div class="two-columns last">
+        <img src="img/2-column/night.jpeg" alt="">
+        <div class="text">
+          <h2>Yet another title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum. </p>
+          <p>Donec eu velit dignissim, efficitur elit sit amet, semper nibh. Donec mollis accumsan diam, id tempus urna pretium eget. Nulla blandit porttitor molestie. Nunc sed eros sed lectus tincidunt commodo sed non ligula.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!--section3 has width: 100% and a parallax effect-->
+  <section class="section" id="section3">
+    <div class="text">
+      <h2>Another parallax effect</h2>
+      <p>This one moves at a different speed than the one on top of the page</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <p>Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante.  Etiam posuere blandit lacus at fermentum.</p>
+    </div>
+  </section>
+
+
+
+  <div class="bottom-content">
+    <section class="section" id="section4">
+      <div class="four-columns">
+        <img src="img/3-column/mountain.jpeg" alt="">
+        <h2>Column 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum.</p>
+      </div>
+      <div class="four-columns">
+        <img src="img/3-column/beach.jpeg" alt="">
+        <h2>Column 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum.</p>
+      </div>
+      <div class="four-columns">
+        <img src="img/3-column/beach.jpeg" alt="">
+        <h2>Column 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum.</p>
+      </div>
+      <div class="four-columns last">
+        <img src="img/3-column/city.jpeg" alt="">
+        <h2>Column 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sem erat, molestie vel imperdiet a, hendrerit quis ante. Etiam posuere blandit lacus at fermentum.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="text">
+        <div id="infoBtn-container">
+          <div class="title" id="infoBtn">
+            <img class="icon" id="info" src="img/icons/info.png"><h3>Info</h3> (what you've looked at)
+          </div>
+        </div>
+        <div id="info-modal">
+          <div id="modal-content">
+            <span id="modal-close">&times</span>
+            <p>This page shows a generic responsive one-page layout. </p>
+            <p>It's a little project I made to practice my coding skills and, as such, I coded every feature myself, and I purposely avoided using bootstrap or any javascript plugin.</p>
+            <p>You can find the code for this page on GitHub <a href="#"><img class="icon" id="github" src="img/icons/github.svg"></a></p>
+            <!--<p>You can contact me at <a href="mailto:marco.bosa991@gmail.com">marco.bosa991@gmail.com</a></p> -->
+          </div>
+        </div>
+        <div id="dummy-list-container">
+          <ul id="dummy-list">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Duis aute irure dolor in reprehenderit</li>
+            <li>Excepteur sint occaecat cupidatat</li>
+          </ul>
+        </div>
+      </div>
+      <div id="social-media-container">
+        <ul id="social-media">
+          <li><a href="#"><img class="icon" src="img/icons/twitter.svg"></a></li>
+          <li><a href="#"><img class="icon" src="img/icons/facebook.svg"></a></a></li>
+          <li><a href="#"><img class="icon" src="img/icons/instagram.svg"></a></a></li>
+          <li><a href="#"><img class="icon" src="img/icons/google.svg"></a></a></li>
+          <li><a href="#"><img class="icon" src="img/icons/rss.svg"></a></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
