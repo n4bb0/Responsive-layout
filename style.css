@@ -119,9 +119,10 @@ li.active {
 
 /* ---home image--- */
 #home-img {
+  position: relative;
   height: 100%;
   text-align: center;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   background-image: url('img/img3.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,6 +132,10 @@ li.active {
   font-size: 1.3em;
 }
 #home-img div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: inline-block;
   padding: 0 20px;
   background-color: rgba(0,0,0,0.3);
