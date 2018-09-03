@@ -122,7 +122,6 @@ li.active {
   position: relative;
   height: 100%;
   text-align: center;
-  /* padding-top: 200px; */
   background-image: url('img/img3.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
