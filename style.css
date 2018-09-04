@@ -130,6 +130,7 @@ li.active {
   color: white;
   font-size: 1.3em;
 }
+
 #home-img div{
   position: absolute;
   top: 50%;
@@ -371,68 +372,61 @@ h2 {
 footer {
   width: 100%;
   background-color: #aec4aa;
-  padding: 20px 0;
 }
 
 footer .footer-content {
   position: relative;
-  height: 200px;
-}
-
-footer .icon#info {
-  width: 20px;
-  margin-right: 10px;
-}
-
-footer .text .title h3 {
-  display: inline-block;
 }
 
 footer .icon#github {
   width: 25px;
 }
 
-#social-media {
-  position:absolute;
-  bottom:0;
-  right:0;
-  width:160px;
+#social-media {borderr: 1px solid red;
+  width:100%;
   list-style: none;
   text-align: center;
+  padding: 50px 0;
   margin: 0;
-  padding: 0;
 }
 
-#social-media li {
+#social-media li {borderr: 1px solid black;
   display: inline-block;
-  width: 25px;
+  width: 15%;
   cursor: pointer;
+  margin: 0 1%;
 }
 
-#social-media li a  {
+#social-media li a  {borderr: 1px solid yellow;
   text-decoration: none;
 }
 
-#dummy-list {
-  list-style: circle;
+@media (min-width: 472px) {
+  #social-media li {
+    width: 71px;
+    margin: 0 2%;
+  }
 }
 
-#dummy-list li {
-  margin-top: 7px;
-}
-
-
-
-  /* ---modal--- */
-#infoBtn-container {
-  text-align: center;
+@media (min-width: 768px) {
+  #social-media li {
+    width: 80px;
+    margin: 0 3%;
+  }
 }
 
 #infoBtn {
-  display: inline-block;
-  padding: 0 10px;
-  border: 5px solid #707070;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
   cursor: pointer;
+}
+
+@media (min-width: 472px) {
+  #infoBtn {
+    width: 30px;
+  }
 }
 
 #info-modal {

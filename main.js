@@ -29,7 +29,6 @@ $(document).ready(function() {
     $(this).addClass('active');
     $('html, body').stop().animate({scrollTop: $('#' + goTo).offset().top - 63}, 800);
   });
-  //var f=$('#home-img')
 
 
 
@@ -51,7 +50,6 @@ $(document).ready(function() {
 
 
   // ---parallax effect---
-  // bugs a little if you scroll fast
   let homeImg = $('#home-img');
   let section3 = $('#section3');
   let $window = $(window);
@@ -66,9 +64,11 @@ $(document).ready(function() {
     };
   };
 
-    $(window).scroll(function() {
+  $(window).scroll(function() {
+    if ($(window).width() > 991) {
       updateScroll(homeImg, 4);
       updateScroll(section3, 8);
+    };
   });
   // ---end parallax effect---
 
@@ -80,19 +80,16 @@ $(document).ready(function() {
   let closeBtn = $('#modal-close');
 
   infoBtn.click(function(){
-    //modal.css('display', 'block');
     modal.fadeIn(400);
   });
 
   closeBtn.click(function() {
-    //modal.css('display', 'none');
-    modal.fadeOut(400);
+    modal.fadeOut(400)
   });
 
   //close the modal by clicking outside of it
   $(window).click(function(event){
     if ($(event.target).is(modal)) {
-      //modal.css('display', 'none');
       modal.fadeOut(400);
     };
   });
@@ -100,8 +97,8 @@ $(document).ready(function() {
 
 
 
-  // prevent default behaviour of social media links
-  $('#social-media a').click(function(e){
+  // prevent default behaviour of social media and info links
+  $('#social-media a, #infoBtn a').click(function(e){
     e.preventDefault();
   });
 
